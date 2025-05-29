@@ -5,8 +5,8 @@ import 'package:mas_pos_app/core/di/service_locator.dart';
 import 'package:mas_pos_app/feature/auth/presentation/bloc/auth_bloc.dart';
 import 'package:mas_pos_app/feature/auth/presentation/pages/login_page.dart';
 import 'package:mas_pos_app/feature/category/presentation/bloc/category_bloc.dart';
-import 'package:mas_pos_app/feature/product/presentation/bloc/add_product/add_product_bloc.dart';
-import 'package:mas_pos_app/feature/product/presentation/bloc/product_bloc.dart';
+
+import 'package:mas_pos_app/feature/product/presentation/bloc/product/product_bloc.dart';
 import 'package:mas_pos_app/feature/product/presentation/bloc/cart/cart_bloc.dart';
 import 'package:mas_pos_app/feature/product/presentation/bloc/cart/cart_event.dart';
 
@@ -31,9 +31,6 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => sl<ProductBloc>(),
-        ),
-        BlocProvider(
-          create: (context) => sl<AddProductBloc>(),
         ),
         BlocProvider(
           create: (context) => sl<CategoryBloc>(),

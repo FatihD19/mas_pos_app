@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mas_pos_app/feature/product/presentation/bloc/product_bloc.dart';
+import 'package:mas_pos_app/feature/product/presentation/bloc/product/product_bloc.dart';
 import 'package:mas_pos_app/feature/product/presentation/widgets/header_app_bar.dart';
 import 'package:mas_pos_app/feature/product/presentation/widgets/product_item.dart';
-import 'package:mas_pos_app/feature/product/presentation/widgets/category_filter_chips.dart';
+import 'package:mas_pos_app/feature/category/presentation/widgets/category_filter_chips.dart';
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key});
@@ -55,26 +55,13 @@ class _ProductPageState extends State<ProductPage> {
 
             const SizedBox(height: 24),
             // Produk yang dijual section
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Produk yang dijual',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
-                  ),
-                ),
-                Text(
-                  'Lihat Semua',
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
+            Text(
+              'Produk yang dijual',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+              ),
             ),
             const SizedBox(height: 16),
             // Product grid

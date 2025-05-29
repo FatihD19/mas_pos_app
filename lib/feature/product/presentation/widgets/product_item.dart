@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mas_pos_app/commons/theme.dart';
 import 'package:mas_pos_app/feature/product/data/model/product_response_model.dart';
-import 'package:mas_pos_app/feature/product/presentation/bloc/product_bloc.dart';
+import 'package:mas_pos_app/feature/product/presentation/bloc/product/product_bloc.dart';
 import 'package:mas_pos_app/utils/utils.dart';
 import '../bloc/cart/cart_bloc.dart';
 import '../bloc/cart/cart_event.dart';
